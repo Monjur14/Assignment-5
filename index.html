@@ -28,7 +28,7 @@
 <body>
     <!-- Hero Section Start -->
     <nav class="contain flex justify-between items-center py-3">
-        <h1 class="text-2xl font-bold">My<span class="text-green">Bus</span></h1>
+        <h1 class="text-[2rem] font-bold">My<span class="text-green">Bus</span></h1>
         <ul class="flex gap-7 text-lg">
             <li class="cursor-pointer">Home</li>
             <li class="cursor-pointer">About</li>
@@ -43,7 +43,7 @@
     <header class="contain rounded-2xl mt-3 flex flex-col items-center justify-center">
         <h1 class="text-[4rem] font-bold leading-tight text-white ">End-to-End Travel with</h1>
         <h1 class="text-[4rem] font-bold text-green">P Paribahan</h1>
-        <p class="max-w-[800px] text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim dolor dolores doloremque porro, distinctio earum qui corporis pariatur, blanditiis atque odio reiciendis temporibus, eaque quos!</p>
+        <p class="max-w-[800px] text-center text-white">Effortless booking, reliable schedules, and comfortable rides. Your journey begins here—explore routes, check schedules, and secure your seat for stress-free travel.</p>
         <a href="#main"><button class="px-6 py-3 bg-green font-semibold rounded-lg cursor-pointer mt-10">Buy Tickets</button></a>
     </header>
     <!-- Hero Section End -->
@@ -88,7 +88,7 @@
         <!-- Main Section Top Part Start -->
         <div class="mt-10 contain">
             <h1 class="text-center text-4xl font-semibold">P.H Paribahan</h1>
-            <p class="text-center max-w-[600px] mx-auto mt-2">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
+            <p class="text-center max-w-[600px] mx-auto mt-2">Discover reliable services, comfortable rides, and easy booking. Your journey begins here – explore routes and book your tickets for a seamless travel experience.</p>
 
 
             <div class="bg-white flex rounded-2xl mt-10 mb-10">
@@ -111,18 +111,18 @@
                     <div class="bg-[#80808013] p-6 flex flex-col gap-5 mt-10 rounded-md">
                         <div class="flex justify-between">
                             <p>Route</p>
-                            <p>Dhaka - Sylhet</p>
+                            <p class="font-bold">Dhaka - Sylhet</p>
                         </div>
                         <hr>
                         <div class="flex justify-between">
                             <p>Departure Time</p>
-                            <p>9:00 PM</p>
+                            <p class="font-bold">9:00 PM</p>
                         </div>
                         <hr>
                         <div class="flex justify-between gap-5">
-                            <button class="bg-[#8080801e] py-3 w-full rounded-md">Boarding Point - Laxmipur</button>
-                            <button class="bg-[#8080801e] py-3 w-full rounded-md">Dropping Point - Bogura</button>
-                            <button class="bg-[#8080801e] py-3 w-full rounded-md">Est. Time - 11 Hour</button>
+                            <button class="bg-[#8080801e] font-semibold py-3 w-full rounded-md">Boarding Point - Laxmipur</button>
+                            <button class="bg-[#8080801e] font-semibold py-3 w-full rounded-md">Dropping Point - Bogura</button>
+                            <button class="bg-[#8080801e] font-semibold py-3 w-full rounded-md">Est. Time - 11 Hour</button>
                         </div>
                     </div>
                 </div>
@@ -279,13 +279,13 @@
                     </div>
                     <div class="flex flex-col">
                         <label for="number" class="font-bold">Phone Number*</label>
-                        <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="Enter your phone number" id="number" class="border border-[#808080c1] rounded-md p-2 mt-2">
+                        <input type="number" inputmode="numeric" pattern="[0-9]*" placeholder="Enter your phone number" id="number" class="border border-[#808080c1] rounded-md p-2 mt-2">
                     </div>
                     <div class="flex flex-col">
                         <label for="email" class="font-bold">Email ID</label>
                         <input type="email" id="email" placeholder="Enter your email id" class="border border-[#808080c1] rounded-md p-2 mt-2">
                     </div>
-                    <button class="w-full bg-[#1DD100] text-white py-2 font-bold rounded-md" onclick="showHidePopUp()">Next</button>
+                    <button class="w-full bg-[#1DD100] cursor-not-allowed text-white py-2 font-bold rounded-md" onclick="showHidePopUp()" disabled id="nextBtn">Next</button>
                     <div class="flex justify-evenly">
                         <h4 class="underline cursor-pointer">Terms and Conditions</h4>
                         <h4 class="underline cursor-pointer">Cancellation Policy</h4>
@@ -302,7 +302,7 @@
             <div class="flex items-center justify-between">
                 <div>
                     <h1 class="text-2xl font-bold text-white">My<span class="text-green">Bus</span></h1>
-                    <p class="text-white max-w-[250px] mt-3">P-Ticket is a digital platform to make your daily commuting better.</p>
+                    <p class="text-white max-w-[250px] mt-3">MyBus is a digital platform to make your daily commuting better.</p>
                 </div>
                 <div>
                     <h1 class="text-white">Download our app</h1>

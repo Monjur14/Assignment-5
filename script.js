@@ -26,6 +26,11 @@ for(let index = 0 ; index < 40 ; index++){
         `);
         let seatIs = document.getElementById("seatSelected")
         selectedSeat = selectedSeat + 1
+        let number = document.getElementById("number").value
+        if(selectedSeat >= 1 && number !== ''){
+                document.getElementById("nextBtn").removeAttribute("disabled")
+                document.getElementById("nextBtn").classList.remove("cursor-not-allowed")
+            }      
         if(selectedSeat === 4){
             document.getElementById("apply").removeAttribute("disabled")
             document.getElementById("apply").classList.remove("cursor-not-allowed")
@@ -78,6 +83,16 @@ function myfunc(){
         } 
     }
 }
+setInterval(() => {
+    let number = document.getElementById("number").value
+        if(selectedSeat >= 1 && number !== ''){
+                document.getElementById("nextBtn").removeAttribute("disabled")
+                document.getElementById("nextBtn").classList.remove("cursor-not-allowed")
+            }
+}, 1000);
 function showHidePopUp(){
-    document.getElementById('popUp').classList.toggle("hidden")
+    let number = document.getElementById("number").value
+    if(selectedSeat >= 1 && number !== ''){       
+        document.getElementById('popUp').classList.toggle("hidden")
+    }    
 }
