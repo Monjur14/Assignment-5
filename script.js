@@ -10,7 +10,7 @@ for(let index = 0 ; index < 40 ; index++){
         }
         if(selectedSeat === 4){
             myfunc()
-            alert("You cann't buy above 4 tickets at a time.")
+            alert("You can't buy more than 4 tickets at a time.")
             return
         }
         seats[index].classList.remove("seat-not-selected");
